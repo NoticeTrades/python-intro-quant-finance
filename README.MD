@@ -8,6 +8,7 @@ Welcome to my Python learning journey, focused on Quantitative Finance! This rep
 2. [Prerequisites](#prerequisites)
 3. [Course Structure](#course-structure)
 4. [Getting Started](#getting-started)
+5. [Learning Resources](learning-resources)
 
 
 ## Introduction
