@@ -32,4 +32,20 @@ else:
     else:
         print(f"You have a low risk portfolio with your stock holdings being {percentage_stock:.2f}%.")
 
-""""I can clean up this code above by adding input validation to ensure the user provides non-negative and non-zero inputs.""" 
+""""I can clean up this code above by adding input validation to ensure the user provides non-negative and non-zero inputs."""
+
+# Investmen Goal Tracker 
+
+investment = float(input("Enter your current investment amount: "))
+goal = float(input("Enter your investment goal:"))
+growth_rate = float(input("Enter the annual growth rate (in %): "))
+
+years = 0
+
+while investment < goal:
+    years += 1  
+    investment += investment * (growth_rate / 100)  # Calculate annual growth
+    print(f"Year {years}: ${investment:.2f}")  # Print the balance for each year
+
+# Print the total number of years it took to reach the goal
+print(f"You will reach your goal in {years} years.")

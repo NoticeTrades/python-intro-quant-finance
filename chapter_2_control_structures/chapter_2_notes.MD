@@ -14,6 +14,11 @@
     - Stands for "else if." It allows you to check multiple conditions.
 3. else Statement (optional):
     - If none of the if or elif conditions are met, the else block runs.
+4. For Loops:
+    - Looping through lists, tuples, and ranges.
+    - Practical examples: Iterating over data
+5. While Loops:
+    - Syntax: Reapeating a block of code while a condition is True.
 
 ## Example Code
 temp = 45  
