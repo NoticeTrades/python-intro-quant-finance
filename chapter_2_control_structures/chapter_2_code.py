@@ -34,7 +34,7 @@ else:
 
 """"I can clean up this code above by adding input validation to ensure the user provides non-negative and non-zero inputs."""
 
-# Investmen Goal Tracker 
+# Investment Goal Tracker 
 
 investment = float(input("Enter your current investment amount: "))
 goal = float(input("Enter your investment goal:"))
@@ -49,3 +49,40 @@ while investment < goal:
 
 # Print the total number of years it took to reach the goal
 print(f"You will reach your goal in {years} years.")
+
+## Problem: Grade Evaulator 
+
+grade = float(input("What was your score? Please enter a number between 0 and 100: "))
+
+if grade < 0 or grade > 100:
+    print("Please enter a valid score between 0 and 100")
+else:
+    if 90 <= grade <= 100:
+        print("You got an A!")
+    elif 80 <= grade < 90:
+        print("You got a B!")
+    elif 70 <= grade < 80:
+        print("You got a C!")
+    elif 60 <= grade < 70:
+        print("You got a D!")
+    else:
+        print("You got an F!")
+
+
+## Problem: Savings Goal Tracker 
+
+savings_goal = float(input("What is your savings goal (e.g., $1,000): "))
+
+savings_balance = 0 
+
+while savings_balance < savings_goal:
+    deposit = float(input("How much would you like to deposit? "))
+    savings_balance += deposit
+    print(f"Your current savings balance is ${savings_balance:.2f}")
+
+# Check if the goal was reached or exceeded after the loop
+if savings_balance == savings_goal:
+    print("Congratulations! You have reached your savings goal!")
+elif savings_balance > savings_goal:
+    print("Congratulations! You have exceeded your savings goal!")
+
